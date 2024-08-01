@@ -1,7 +1,7 @@
 function getFilteredAnimals (data, arg) {
     const result = [];
-    data.forEach(location => {
-        location.people.forEach(person => {
+    data.forEach(name => {
+        name.people.forEach(person => {
             person.animals.forEach(animal => {
                 if (animal.name.includes(arg)) {
                     result.push(animal.name);
